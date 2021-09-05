@@ -63,8 +63,17 @@ while True:
     if key == ord('w'):
         action = np.array([0.44, 0.0])
 
+    # Doblar y avanzar hacia la izquierda al apretar la tecla a
     if key == ord('a'):
-        action = np.array([0.5, 0.5])
+        action = np.array([1.0, 0.5])
+
+    # Doblar pero no avanzar hacia la derecha al apretar la tecla d
+    if key == ord('d'):
+        action = np.array([0.0, -0.5])
+
+    # Retroceder recto al apretar la tecla s
+    if key == ord('s'):
+        action = np.array([-0.5, 0.0])
 
 
 
